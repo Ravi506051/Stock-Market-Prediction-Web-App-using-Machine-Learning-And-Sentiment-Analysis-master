@@ -51,3 +51,9 @@ This is an educational analysis project, not investment advice. Historical patte
 Use chronological validation to avoid future-data leakage. Document data timestamps, market-data source, sentiment source, and baseline performance; this project is educational, not investment advice.
 
 For reproducible updates, record the dataset or upstream version, environment and dependency versions, configuration, and actual outputs from each run. Keep illustrative examples clearly labelled and never commit credentials or private data.
+
+### Technical Deep Dive
+
+For time-series prediction, use chronological train/validation/test windows rather than a random split. Construct lagged price/volume features using information available at prediction time, and align each news item with its publication timestamp before deriving sentiment features. Compare against simple baselines such as the previous close or a moving average.
+
+Suggested engineering checks: prevent look-ahead leakage, document ticker/data-provider coverage and missing trading days, report MAE/RMSE on a later test period, and label all forecasts as uncertain educational estimates—not investment advice.
