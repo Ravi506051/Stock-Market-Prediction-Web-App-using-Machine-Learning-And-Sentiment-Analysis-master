@@ -45,3 +45,9 @@ Stock prices are influenced by economic events, company announcements, and inves
 Use a chronological train/test split for time-series experiments so future observations do not leak into training. Compare predictions with a simple baseline and report MAE or RMSE on the test period. If text sentiment is used, document the source and timestamp of the text and ensure it was available at prediction time.
 
 This is an educational analysis project, not investment advice. Historical patterns and sentiment signals do not guarantee future market movements.
+
+## Project Development Notes
+
+Use chronological validation to avoid future-data leakage. Document data timestamps, market-data source, sentiment source, and baseline performance; this project is educational, not investment advice.
+
+For reproducible updates, record the dataset or upstream version, environment and dependency versions, configuration, and actual outputs from each run. Keep illustrative examples clearly labelled and never commit credentials or private data.
