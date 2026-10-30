@@ -39,3 +39,9 @@ Sentiment results can be summarized using a bar chart showing the number of posi
 ## Limitations
 
 Stock prices are influenced by economic events, company announcements, and investor behavior. Predictions are estimates and do not guarantee future performance. This project is intended for educational purposes and is not financial advice.
+
+## Validation and Risk Notes
+
+Use a chronological train/test split for time-series experiments so future observations do not leak into training. Compare predictions with a simple baseline and report MAE or RMSE on the test period. If text sentiment is used, document the source and timestamp of the text and ensure it was available at prediction time.
+
+This is an educational analysis project, not investment advice. Historical patterns and sentiment signals do not guarantee future market movements.
