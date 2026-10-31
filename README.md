@@ -65,3 +65,11 @@ Suggested engineering checks: prevent look-ahead leakage, document ticker/data-p
 - Record ticker, market-data source, retrieval timestamp, prediction horizon, and sentiment-data source.
 - Ensure news or text features were published before the prediction timestamp.
 - Historical patterns and sentiment signals do not guarantee future returns. This project is for learning and is not investment advice.
+
+## Time-Series and Sentiment Evaluation
+
+- Preserve chronological order when splitting financial time-series data; do not randomly shuffle future and past observations.
+- Build lagged features using information available at prediction time only.
+- Compare predictions with a naive baseline and report MAE/RMSE over a clearly stated test period.
+- Document the source, timestamp, timezone, and refresh frequency of market and sentiment data.
+- Treat sentiment as a noisy signal and clearly communicate that model outputs are experimental, not investment advice.
