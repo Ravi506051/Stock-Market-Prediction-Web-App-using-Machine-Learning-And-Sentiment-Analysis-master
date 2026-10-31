@@ -57,3 +57,11 @@ For reproducible updates, record the dataset or upstream version, environment an
 For time-series prediction, use chronological train/validation/test windows rather than a random split. Construct lagged price/volume features using information available at prediction time, and align each news item with its publication timestamp before deriving sentiment features. Compare against simple baselines such as the previous close or a moving average.
 
 Suggested engineering checks: prevent look-ahead leakage, document ticker/data-provider coverage and missing trading days, report MAE/RMSE on a later test period, and label all forecasts as uncertain educational estimates—not investment advice.
+
+## Time-Series Validation and Risk Notes
+
+- Use chronological train/test splits; random shuffling can leak future information into training.
+- Compare forecasts with a simple persistence baseline and report MAE/RMSE on a clearly defined test period.
+- Record ticker, market-data source, retrieval timestamp, prediction horizon, and sentiment-data source.
+- Ensure news or text features were published before the prediction timestamp.
+- Historical patterns and sentiment signals do not guarantee future returns. This project is for learning and is not investment advice.
