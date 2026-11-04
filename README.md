@@ -32,3 +32,15 @@ Add walk-forward validation, transaction-cost-aware backtesting and clear docume
 
 ## Maintainer
 **Ravi Kumar Rao** · [GitHub](https://github.com/Ravi506051)
+
+## Skills Demonstrated
+
+- Time-series analysis
+- market-data feature engineering
+- text sentiment analysis
+- forecasting evaluation
+- visualization.
+
+## Portfolio Context
+
+This project is part of my hands-on learning portfolio. The repository documents the workflow and implementation; results should be reproduced from the included code and data before being used in reports or professional claims.
