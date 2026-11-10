@@ -44,3 +44,10 @@ Add walk-forward validation, transaction-cost-aware backtesting and clear docume
 ## Portfolio Context
 
 This project is part of my hands-on learning portfolio. The repository documents the workflow and implementation; results should be reproduced from the included code and data before being used in reports or professional claims.
+
+## Forecasting and Risk Considerations
+
+- Use chronological train/test splits to avoid leaking future information into model training.
+- Compare forecasts with simple baselines and report error across multiple time periods.
+- Align sentiment timestamps carefully with market observations and document the text-data source.
+- Treat outputs as experimental analysis, not investment advice or a guarantee of future market movement.
